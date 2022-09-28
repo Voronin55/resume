@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Sergey, CV, resume">
     <meta name="description" content="Это сайт - резюме Сергея Воронина">
+    <link rel="stylesheet" href="styles.css">
     <title>Sergey Resume</title>
 </head>
 <body>
 
-    <img src="avatar.jpg" alt="Сергей Воронин" width="200">
+  <div class="container">
+<div class="info">
+  <img src="avatar.jpg" alt="Сергей Воронин" class="avatar">
 
+  <div class="info-text">
     <h1>Сергей Воронин</h1>
 
     <p>Я учусь в онлайн школе <strong>Result School</strong> и хочу изучать 
@@ -26,26 +30,32 @@
     <a href="" target="_blank">Telegram</a>
     ¦
     <a href="" target="_blank">Youtube</a>
+  </div>
+</div>
+
+<div class="card bg-green">
   <h2>Мои хобби</h2>  
 
-  <ol>
+  <ol class="list">
     <li>Пешие прогулки</li>
     <li>Спорт</li>
     <li>Чтение книг</li>
     <li>Самообразование</li>
   </ol>
-  <h2>Опыт</h2>
+</div>
+<div class="card bg-red">
+  <h2>Опыт работы</h2>
 
-  <table>
-    <thead>
+  <table class="table">
+   <!-- <thead>
       <tr>
         <th>Название</th>
         <th>Должность</th>
         <th>Год</th>
       </tr>
-    </thead>
+    </thead> -->
    <tbody>
- <tr>
+   <tr>
       <td>Завод</td>
       <td>Программист</td>
       <td>1980-1985</td>
@@ -62,26 +72,46 @@
     </tr>
    </tbody> 
   </table>
+</div>
 
+ <div class="card bg-yellow">
+  <h2>Курсы</h2>
+
+  <ul class="link-list">
+    <li>
+      <a href="#">HTML & CSS</a>
+      <br>
+      <a href="#">Frontend Paзработчик</a>
+    </li>
+  </ul>
+ </div>
+
+  
+<form action="/" class="form">
   <h2>Связаться со мной</h2>
-<form action="">
-  <div>
+  <div class="form-row">
+  <div class="form-group">
     <label for="name">Ваше имя:</label>
     <input type="text" id="name"placeholder="Введите имя" >
   </div>  
 
-  <div>
+  <div class="form-group">
       <label for="email">Ваш еmail:  </label>
       <input type="email" id="email" placeholder="Введите email">
     </div> 
-
-    <div>
+  </div>
+    <div class="form-group">
       <label for="message">Ваше сообщение</label>
       <br>
       <textarea id="message" cols="20" rows="5"placeholder="Введите сообщение..."></textarea>
     </div> 
-<input type="submit" value="Отправить!">
+<input class="btn" type="submit" value="Отправить!">
 </form>
+
+<br>
+<br>
+<br>
+</div>
 
 </body>
 </html>
