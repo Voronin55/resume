@@ -2,4 +2,4 @@
 
 ## Результат вы можете посмотреть тут
 
-[Duck Duck Go](https://Voronin55.github.io/resume/)
+[Моя первая работа на HTML & CSS](https://Voronin55.github.io/resume/)
